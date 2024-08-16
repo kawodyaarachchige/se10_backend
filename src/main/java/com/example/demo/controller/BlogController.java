@@ -19,6 +19,7 @@ public class BlogController {
     public List<Blog> getAllPost() {
         return blogRepository.findAll();
     }
+
     @PostMapping("/savePost")
     public Blog savePost(@RequestBody Blog blog) {
         return blogRepository.save(blog);

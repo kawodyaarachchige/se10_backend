@@ -10,6 +10,9 @@ import java.util.List;
 public interface BlogRepository extends JpaRepository <Blog,Integer >{
 
     List<Blog> findAll();
+    // @Qurey(value = "select * from Blog",nativeQurey = true)
+    // @modifying only for update queries
+    //List <Blog> getAllDataFromDB();
 
 
 }
